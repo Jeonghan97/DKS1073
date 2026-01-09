@@ -1,0 +1,10 @@
+is_staff = input("Are you staff? (yes/no):")
+
+if is_staff == "yes":
+    level= int(input("Enter your staff level:"))
+    if level >5:
+        print("Access granted")
+    else:
+        print("Access denied: insufficient level")
+else:
+    print("Access denied: staff only")
